@@ -32,15 +32,6 @@
                 android:textStyle="bold"
                 android:textColor="@color/lavender"/>
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:id="@+id/signup_name"
-                android:layout_marginTop="40dp"
-                android:padding="8dp"
-                android:hint="Name"
-                android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
 
             <EditText
                 android:layout_width="match_parent"

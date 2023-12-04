@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     public void openUploadActivity(){
-        Intent intent = new Intent(this, UploadActivity.class);
+        Intent intent = new Intent(this, Tasklist.class);
         startActivity(intent);
     }
 }

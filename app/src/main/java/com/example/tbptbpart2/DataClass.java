@@ -9,6 +9,8 @@ public class DataClass {
     private String dataImage;
     private String key;
 
+
+
     public String getKey() {
         return key;
     }

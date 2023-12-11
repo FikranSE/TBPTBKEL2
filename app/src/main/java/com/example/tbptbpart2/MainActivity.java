@@ -32,22 +32,33 @@ public class MainActivity extends AppCompatActivity {
     private TextView taskName;
     private ImageView taskImage;
 
+    private ImageView asistenImage;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        taskName = (TextView) findViewById(R.id.taskName);
+        asistenImage = (ImageView) findViewById(R.id.asistenImage);
         taskImage = (ImageView) findViewById(R.id.taskImage);
         taskImage.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                openUploadActivity();
+                openTaskActivity();
+            }
+        });
+        asistenImage.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                openAssistenActivity();
             }
         });
     }
-    public void openUploadActivity(){
+    public void openTaskActivity(){
         Intent intent = new Intent(this, Tasklist.class);
+        startActivity(intent);
+    }
+    public void openAssistenActivity(){
+        Intent intent = new Intent(this, ListAsistenActivity.class);
         startActivity(intent);
     }
 }

@@ -36,7 +36,7 @@ public class MyAssistenAdapter extends RecyclerView.Adapter<MyViewHolderAssisten
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolderAssisten holder, int position) {
-        Glide.with(context).load(dataListAssisten.get(position).getDataImage()).into(holder.recImage);
+        Glide.with(context).load(dataListAssisten.get(position).getDataImage()).into(holder.recImageAssisten);
         holder.recName.setText(dataListAssisten.get(position).getDataName());
         holder.recDesc.setText(dataListAssisten.get(position).getDataDesc());
 
@@ -66,14 +66,14 @@ public class MyAssistenAdapter extends RecyclerView.Adapter<MyViewHolderAssisten
 
 class MyViewHolderAssisten extends RecyclerView.ViewHolder{
 
-    ImageView recImage;
+    ImageView recImageAssisten;
     TextView recName, recDesc, recDue;
     CardView recCardAssisten;
 
     public MyViewHolderAssisten(@NonNull View itemView) {
         super(itemView);
 
-        recImage = itemView.findViewById(R.id.recImage);
+        recImageAssisten = itemView.findViewById(R.id.recImageAssisten);
         recCardAssisten = itemView.findViewById(R.id.recCardAssisten);
         recDesc = itemView.findViewById(R.id.recDesc);
         recName = itemView.findViewById(R.id.recName);

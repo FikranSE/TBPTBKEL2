@@ -33,22 +33,37 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:padding="20dp"
-        android:text="Language"
-        android:layout_gravity="center"
-        android:id="@+id/detailLang"
-        android:textSize="18sp"
-        android:textColor="@color/lavender"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:padding="20dp"
         android:text="Description"
         android:layout_gravity="center"
         android:id="@+id/detailDesc"
         android:textSize="18sp"
-        android:textColor="@color/lavender"/>
+        android:textColor="@color/black"/>
+
+   <androidx.appcompat.widget.LinearLayoutCompat
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="10dp"
+           android:padding="20dp"
+           android:text="Due date"
+           android:layout_gravity="center"
+           android:id="@+id/due"
+           android:textSize="18sp"
+           android:textColor="@color/lavender"/>
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="20dp"
+           android:padding="20dp"
+           android:text="Due date"
+           android:layout_gravity="center"
+           android:id="@+id/detailDue"
+           android:textSize="18sp"
+           android:textColor="@color/lavender"/>
+   </androidx.appcompat.widget.LinearLayoutCompat>
+
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -74,7 +89,7 @@
                 android:id="@+id/editButton"
                 android:src="@drawable/baseline_mode_edit_outline_24"
                 app:fab_showShadow="true"
-                app:fab_colorNormal="@color/green"
+                app:fab_colorNormal="@color/lavender"
                 app:fab_size="mini"/>
 
             <com.github.clans.fab.FloatingActionButton

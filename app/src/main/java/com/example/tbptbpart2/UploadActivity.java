@@ -34,7 +34,7 @@ public class UploadActivity extends AppCompatActivity {
 
     ImageView uploadImage;
     Button saveButton;
-    EditText uploadTopic, uploadDesc, uploadLang;
+    EditText uploadTopic, uploadDesc, uploadDue;
     String imageURL;
     Uri uri;
 
@@ -46,7 +46,7 @@ public class UploadActivity extends AppCompatActivity {
         uploadImage = findViewById(R.id.uploadImage);
         uploadDesc = findViewById(R.id.uploadDesc);
         uploadTopic = findViewById(R.id.uploadTopic);
-        uploadLang = findViewById(R.id.uploadLang);
+        uploadDue = findViewById(R.id.uploadDue);
         saveButton = findViewById(R.id.saveButton);
 
         ActivityResultLauncher<Intent> activityResultLauncher = registerForActivityResult(
@@ -116,9 +116,9 @@ public class UploadActivity extends AppCompatActivity {
 
         String title = uploadTopic.getText().toString();
         String desc = uploadDesc.getText().toString();
-        String lang = uploadLang.getText().toString();
+        String due = uploadDue.getText().toString();
 
-        DataClass dataClass = new DataClass(title, desc, lang, imageURL);
+        DataClass dataClass = new DataClass(title, desc, due, imageURL);
 
         //We are changing the child from title to currentDate,
         // because we will be updating title as well and it may affect child value.

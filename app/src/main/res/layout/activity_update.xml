@@ -50,7 +50,7 @@
                 android:padding="16dp"
                 android:hint="Enter topic name"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/black"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -61,18 +61,18 @@
                 android:padding="16dp"
                 android:hint="Enter description"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/black"/>
 
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/updateLang"
+                android:id="@+id/updateDue"
                 android:background="@drawable/lavender_border"
                 android:layout_marginTop="20dp"
                 android:padding="16dp"
-                android:hint="Enter language"
+                android:hint="Enter Due"
                 android:gravity="start|center_vertical"
-                android:textColor="@color/lavender"/>
+                android:textColor="@color/black"/>
 
             <Button
                 android:layout_width="match_parent"

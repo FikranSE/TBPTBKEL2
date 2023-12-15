@@ -33,11 +33,13 @@ public class MainActivity extends AppCompatActivity {
     private ImageView taskImage;
 
     private ImageView asistenImage;
+    private ImageView prakttikan;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        prakttikan = (ImageView) findViewById(R.id.praktikan);
         asistenImage = (ImageView) findViewById(R.id.asistenImage);
         taskImage = (ImageView) findViewById(R.id.taskImage);
         taskImage.setOnClickListener(new View.OnClickListener(){
@@ -52,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
                 openAssistenActivity();
             }
         });
+        prakttikan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openPraktikanActivity();
+            }
+        });
     }
     public void openTaskActivity(){
         Intent intent = new Intent(this, Tasklist.class);
@@ -59,6 +67,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void openAssistenActivity(){
         Intent intent = new Intent(this, ListAsistenActivity.class);
+        startActivity(intent);
+    }
+    public void openPraktikanActivity(){
+        Intent intent = new Intent(this, ListUserActivity.class);
         startActivity(intent);
     }
 }

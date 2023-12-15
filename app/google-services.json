@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1037912892862",
+    "firebase_url": "https://tbptbpart2-default-rtdb.firebaseio.com",
+    "project_id": "tbptbpart2",
+    "storage_bucket": "tbptbpart2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1037912892862:android:3f9fa2219e39fa026185ef",
+        "android_client_info": {
+          "package_name": "com.example.tbptbpart2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPJRWd1Mo5BXMHuSCHFDKveFh54i_0-t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
